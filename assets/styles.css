@@ -1,9 +1,9 @@
 :root{
-  --bg: #fbfaf7;
-  --text: #1a1a1a;
-  --muted: #6f6f6f;
-  --accent: #b89a5e;
-  --soft: #e9e4db;
+  --bg:#fbfaf7;
+  --text:#1a1a1a;
+  --muted:#6f6f6f;
+  --accent:#b89a5e;
+  --soft:#e9e4db;
 }
 
 body{
@@ -14,21 +14,35 @@ body{
   -webkit-font-smoothing: antialiased;
 }
 
+/* soft atmospheric depth */
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background: radial-gradient(circle at 15% 10%, rgba(255,255,255,0.8), transparent 55%);
+  pointer-events:none;
+}
+
 /* ===== NAV ===== */
 .top{
   position:fixed;
   top:0;
   left:0;
   width:100%;
+  background:rgba(251,250,247,0.75);
+  backdrop-filter: blur(12px);
+  z-index:1000;
+}
+
+.top-inner{
+  max-width:1100px;
+  margin:0 auto;
+  padding:20px 32px;
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:20px 48px;
   font-size:11px;
   letter-spacing:4px;
-  background:rgba(251,250,247,0.8);
-  backdrop-filter: blur(10px);
-  z-index:1000;
 }
 
 .nav a{
@@ -36,40 +50,42 @@ body{
   text-decoration:none;
   color:var(--muted);
   font-size:12px;
+  transition:0.3s ease;
 }
 
 .nav a:hover{
   color:var(--accent);
 }
 
-/* ===== LAYOUT ===== */
+/* ===== MAIN LAYOUT ===== */
 main{
   padding-top:140px;
 }
 
-/* ===== HERO ===== */
+/* ===== HERO (NOW MORE EDITORIAL) ===== */
 .hero{
   max-width:760px;
-  margin:140px auto 100px;
+  margin:160px auto 80px;
   padding:0 32px;
 }
 
 h1{
   font-size:56px;
   font-weight:400;
-  line-height:1.1;
-  margin-bottom:20px;
+  line-height:1.05;
   letter-spacing:-0.5px;
+  margin-bottom:26px;
 }
 
 .lead{
   font-size:18px;
   line-height:1.9;
   color:var(--muted);
+  max-width:620px;
   margin-bottom:40px;
 }
 
-/* ===== CTA ===== */
+/* CTA refined */
 .cta a{
   display:inline-block;
   margin-right:18px;
@@ -78,13 +94,32 @@ h1{
   font-size:14px;
 }
 
-/* ===== SECTION GRID ===== */
+/* ===== IMAGE MOMENT (KEY UPGRADE) ===== */
+.image-block{
+  max-width:860px;
+  margin:140px auto;
+  padding:0 32px;
+}
+
+.image-placeholder{
+  height:320px;
+  background:linear-gradient(135deg, #eee7dd, #f5f2ec);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:#8a8a8a;
+  font-size:13px;
+  line-height:1.6;
+}
+
+/* ===== HOME / HEAD / HEART (NOW MORE PREMIUM) ===== */
 .grid{
   max-width:760px;
-  margin:120px auto;
+  margin:140px auto;
   padding:0 32px;
   display:grid;
-  gap:40px;
+  gap:50px;
 }
 
 .card h2{
@@ -95,42 +130,23 @@ h1{
 
 .card p{
   color:var(--muted);
-  line-height:1.8;
+  line-height:1.9;
 }
 
-/* ===== FEATURE ===== */
+/* ===== FEATURE (WEIGHT SHIFT = LUXURY FEEL) ===== */
 .feature{
   max-width:760px;
-  margin:140px auto;
+  margin:160px auto;
   padding:0 32px;
 }
 
 .feature h2{
   font-weight:400;
-  font-size:28px;
-  margin-bottom:10px;
+  font-size:30px;
+  margin-bottom:12px;
 }
 
 .feature p{
   color:var(--muted);
-  line-height:1.8;
-}
-
-/* ===== IMAGE PLACEHOLDER (IMPORTANT FOR FUTURE) ===== */
-.image-block{
-  max-width:760px;
-  margin:120px auto;
-  padding:0 32px;
-}
-
-.image-placeholder{
-  height:280px;
-  background:var(--soft);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  color:#8a8a8a;
-  font-size:13px;
-  line-height:1.6;
+  line-height:1.9;
 }

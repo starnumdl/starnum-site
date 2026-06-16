@@ -11,11 +11,11 @@ body{
   margin:0;
   background:var(--bg);
   color:var(--text);
-  -webkit-font-smoothing:antialiased;
   font-family: Georgia, serif;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* atmospheric depth */
+/* subtle atmosphere */
 body::before{
   content:"";
   position:fixed;
@@ -24,7 +24,7 @@ body::before{
   pointer-events:none;
 }
 
-/* NAV SYSTEM */
+/* NAV */
 .top{
   position:fixed;
   top:0;
@@ -41,28 +41,32 @@ body::before{
   display:flex;
   justify-content:space-between;
   align-items:center;
-  letter-spacing:4px;
   font-size:11px;
+  letter-spacing:4px;
+}
+
+.brand{
+  font-weight:400;
 }
 
 .nav a{
   margin-left:16px;
   text-decoration:none;
   color:var(--muted);
-  transition:0.25s ease;
   font-size:12px;
+  transition:0.2s ease;
 }
 
 .nav a:hover{
   color:var(--accent);
 }
 
-/* MAIN FLOW SYSTEM */
+/* LAYOUT BASE */
 main{
   padding-top:140px;
 }
 
-/* HERO = emotional entry point */
+/* HERO */
 .hero{
   max-width:var(--max);
   margin:170px auto 60px;
@@ -74,31 +78,25 @@ h1{
   font-weight:400;
   line-height:1.05;
   letter-spacing:-0.7px;
-  margin-bottom:22px;
+  margin-bottom:20px;
 }
 
 .lead{
   font-size:18px;
   line-height:1.9;
   color:var(--muted);
-  max-width:620px;
 }
 
 /* CTA */
 .cta a{
   display:inline-block;
   margin-right:18px;
-  margin-top:18px;
+  margin-top:16px;
   text-decoration:none;
   color:var(--accent);
-  transition:0.2s ease;
 }
 
-.cta a:hover{
-  opacity:0.7;
-}
-
-/* IMAGE SYSTEM (now feels intentional) */
+/* IMAGE */
 .image-block{
   max-width:860px;
   margin:130px auto;
@@ -112,7 +110,7 @@ h1{
   filter: contrast(0.92) saturate(0.9);
 }
 
-/* CONTENT GRID */
+/* GRID */
 .grid{
   max-width:var(--max);
   margin:150px auto;
@@ -132,7 +130,7 @@ h1{
   line-height:1.9;
 }
 
-/* FEATURE BLOCK */
+/* FEATURE */
 .feature{
   max-width:var(--max);
   margin:170px auto;
@@ -142,7 +140,7 @@ h1{
 .feature h2{
   font-weight:400;
   font-size:32px;
-  margin-bottom:14px;
+  margin-bottom:12px;
 }
 
 .feature p{

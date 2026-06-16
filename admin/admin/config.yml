@@ -1,1 +1,32 @@
+backend:
+  name: git-gateway
+  branch: main
 
+media_folder: "assets"
+public_folder: "/assets"
+
+collections:
+  - name: "homepage"
+    label: "Homepage"
+    files:
+      - file: "index.html"
+        label: "Home Page"
+        name: "home"
+        fields:
+          - {label: "Hero Title", name: "hero_title", widget: "string"}
+          - {label: "Hero Text", name: "hero_text", widget: "text"}
+
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "about.html"
+        label: "About"
+        name: "about"
+
+      - file: "experiences.html"
+        label: "Experiences"
+        name: "experiences"
+
+      - file: "contact.html"
+        label: "Contact"
+        name: "contact"

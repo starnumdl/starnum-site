@@ -1,13 +1,43 @@
 body{
+  margin:0;
   font-family: Georgia, serif;
   background:#f7f4ef;
-  padding:40px;
   color:#1f1f1f;
 }
 
-a{
+.container{
+  max-width:700px;
+  margin:120px auto;
+  padding:40px;
+}
+
+h1{
+  font-size:54px;
+  font-weight:400;
+  margin-bottom:10px;
+}
+
+.tagline{
+  font-size:18px;
+  color:#6b6b6b;
+  margin-bottom:10px;
+}
+
+.subtext{
+  font-size:14px;
+  color:#888;
+  margin-bottom:40px;
+  line-height:1.6;
+}
+
+.nav a{
   display:block;
-  margin-top:10px;
+  margin:10px 0;
   color:#c8a96a;
   text-decoration:none;
+  font-size:16px;
+}
+
+.nav a:hover{
+  color:#a8894f;
 }

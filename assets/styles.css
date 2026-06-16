@@ -5,39 +5,51 @@ body{
   color:#1f1f1f;
 }
 
-.container{
-  max-width:700px;
-  margin:120px auto;
+/* top brand bar */
+.top{
+  position:fixed;
+  top:0;
+  width:100%;
+  padding:25px 40px;
+  font-size:14px;
+  letter-spacing:3px;
+  color:#1f1f1f;
+}
+
+/* center hero layout */
+.hero{
+  max-width:800px;
+  margin:140px auto;
   padding:40px;
 }
 
+/* main title */
 h1{
-  font-size:54px;
+  font-size:48px;
   font-weight:400;
-  margin-bottom:10px;
+  line-height:1.2;
+  margin-bottom:20px;
 }
 
-.tagline{
+/* subtitle */
+.lead{
   font-size:18px;
   color:#6b6b6b;
-  margin-bottom:10px;
-}
-
-.subtext{
-  font-size:14px;
-  color:#888;
+  line-height:1.7;
   margin-bottom:40px;
-  line-height:1.6;
 }
 
-.nav a{
-  display:block;
-  margin:10px 0;
-  color:#c8a96a;
+/* CTA links */
+.cta a{
+  display:inline-block;
+  margin-right:20px;
+  margin-top:10px;
   text-decoration:none;
+  color:#c8a96a;
   font-size:16px;
+  border-bottom:1px solid transparent;
 }
 
-.nav a:hover{
-  color:#a8894f;
+.cta a:hover{
+  border-bottom:1px solid #c8a96a;
 }

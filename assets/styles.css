@@ -1,0 +1,13 @@
+body{
+  font-family: Georgia, serif;
+  background:#f7f4ef;
+  padding:40px;
+  color:#1f1f1f;
+}
+
+a{
+  display:block;
+  margin-top:10px;
+  color:#c8a96a;
+  text-decoration:none;
+}

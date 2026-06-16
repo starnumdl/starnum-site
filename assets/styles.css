@@ -104,3 +104,21 @@ h1{
   color:#666;
   line-height:1.8;
 }
+.image-block{
+  max-width:720px;
+  margin:120px auto;
+  padding:0 32px;
+}
+
+.image-placeholder{
+  height:260px;
+  background:#e9e4db;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:#8a8a8a;
+  font-size:14px;
+  line-height:1.6;
+  padding:20px;
+}
